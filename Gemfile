@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'compass'
+gem 'rack', '~>1.1'
+gem 'rspec', :require => 'spec'
+gem 'bootstrap-sass'
+gem 'sass-globbing'

@@ -1,0 +1,17 @@
+// First, we need to import our helper Sass code
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+// Import variables, which you can set to update fonts, colors, etc. site-wide
+@import "variables/**/*";
+// Import Bootstrap for Sass
+@import "bootstrap";
+// Import Compass
+@import "compass";
+
+// Import fonts
+@import "fontawesome/**/*";
+@import "glyphicons/**/*";
+
+// Now it's finally time for your own styling! Include it in the _main.scss file
+// It comes pre-loaded with the Greyscale base theme's styling
+@import "base/**/*";
