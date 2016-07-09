@@ -50,3 +50,11 @@ Visit your GitHub pages repo online (i.e. https://github.com/mareoc/mareoc.githu
 
 Finally, visit your GitHub Pages site at _https://[username].github.io_ and you should see your starter website. Again, be sure to replace [username] with your GitHub username.
 __Congratulations!!!__
+
+Customizing your new site
+------
+## Rename the site and add your contact information
+
+
+## Add a custom domain name
+If you own (or have purchased) a domain name, you can add that via the settings tab for your repo. Just go to the _GitHub Pages_ section about halfway down the page. Click the _learn more_ link there for full details. But basically, you just type in the domain name, click save, and then have your DNS provider create a CNAME record for the www subdomain pointing to _github.com/username/username.github.io_. Create an ALIAS or ANAME record for the bare (non-www) domain.
