@@ -1,12 +1,16 @@
-# Finstrap
-_Bootstrap starting point for ocean-science cats, based on Bootstrap Sass and Grayscale_
+Finstrap
+======
+Bootstrap starting point for ocean-science cats, based on Bootstrap Sass and Grayscale
 
 Finstrap is a simple starter website you can clone and tailor to be your own. It uses [Bootstrap 3](http://getbootstrap.com/), specifically, the [Sass-port](https://github.com/twbs/bootstrap-sass) and [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) as our foundation.
 
-## Hosting
-As with all websites, you'll need a host. Luckily for us, GitHub provides free hosting with [GitHub Pages](https://pages.github.com/)!
+## Important notes
+As with all websites, you'll need a host. Luckily for us, GitHub provides free hosting with [GitHub Pages](https://pages.github.com/)! These instructions are written assuming you've never touched GitHub, a terminal, an IDE, HTML, Sass, or any of those ~~fancy~~ ridiculously-awesome web-development helpers before. We're attempting to be very thorough here!
 
-## Getting started (from scratch)
+If anything is wrong/not clear/deprecated, use the Issues tab (at the top of the GitHub repository) to let us know –– thanks!
+
+Getting started (from scratch)
+------
 ### Step 1: Setup a GitHub Pages repository
 First off, if you don't have a GitHub account, go [create one](https://github.com/join)! Note that your GitHub Pages site will live at https://[username].github.io –– so choose your username wisely.
 
@@ -43,5 +47,5 @@ You'll need to run the following commands in order:
 
 Visit your GitHub pages repo online (i.e. https://github.com/mareoc/mareoc.github.io) and you should see it's filled with code now. Yay!!
 
-Finally, visit your GitHub Pages site at _https://[username].github.io_ and you should see your starter website.
+Finally, visit your GitHub Pages site at _https://[username].github.io_ and you should see your starter website. Again, be sure to replace [username] with your GitHub username.
 __Congratulations!!!__
