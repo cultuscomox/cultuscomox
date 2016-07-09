@@ -39,12 +39,12 @@ First, run `rm -rf .git` to remove the _mareoc_ git configuration. You should no
 
 You'll need to run the following commands in order:
 <ol>
-<li>`git init` initializes an empty git project.</li>
-<li>`git add .` adds all the files to the code you'll be committing to GitHub.</li>
-<li>`git commit -m "First commit"` creates the initial commit.</li>
-<li>`git remote add origin git@github.com:username.github.io` replacing username with your GitHub username, this will link the code in your IDE to your GitHub Pages repo.</li>
-<li>`git remote -v` verifies the repo exists.</li>
-<li>`git push origin master` pushes the codebase in your IDE to your GitHub Pages repo.</li>
+<li><code>git init</code> initializes an empty git project.</li>
+<li><code>git add .</code> adds all the files to the code you'll be committing to GitHub.</li>
+<li><code>git commit -m "First commit"</code> creates the initial commit.</li>
+<li><code>git remote add origin git@github.com:username.github.io</code> replacing username with your GitHub username, this will link the code in your IDE to your GitHub Pages repo.</li>
+<li><code>git remote -v</code> verifies the repo exists.</li>
+<li><code>git push origin master</code> pushes the codebase in your IDE to your GitHub Pages repo.</li>
 </ol>
 Visit your GitHub pages repo online (i.e. https://github.com/mareoc/mareoc.github.io) and you should see it's filled with code now. Yay!!
 
