@@ -38,13 +38,14 @@ Right now, the Finstrap project you just cloned is linked to the _mareoc_ GitHub
 First, run `rm -rf .git` to remove the _mareoc_ git configuration. You should notice the _git:(master)_ text in the terminal is now gone. Good job!
 
 You'll need to run the following commands in order:
-1. `git init` initializes an empty git project.
-2. `git add .` adds all the files to the code you'll be committing to GitHub.
-3. `git commit -m "First commit"` creates the initial commit.
-4. `git remote add origin git@github.com:username.github.io` replacing username with your GitHub username, this will link the code in your IDE to your GitHub Pages repo.
-5. `git remote -v` verifies the repo exists.
-6. `git push origin master` pushes the codebase in your IDE to your GitHub Pages repo.
-
+<ol>
+<li>`git init` initializes an empty git project.</li>
+<li>`git add .` adds all the files to the code you'll be committing to GitHub.</li>
+<li>`git commit -m "First commit"` creates the initial commit.</li>
+<li>`git remote add origin git@github.com:username.github.io` replacing username with your GitHub username, this will link the code in your IDE to your GitHub Pages repo.</li>
+<li>`git remote -v` verifies the repo exists.</li>
+<li>`git push origin master` pushes the codebase in your IDE to your GitHub Pages repo.</li>
+</ol>
 Visit your GitHub pages repo online (i.e. https://github.com/mareoc/mareoc.github.io) and you should see it's filled with code now. Yay!!
 
 Finally, visit your GitHub Pages site at _https://[username].github.io_ and you should see your starter website. Again, be sure to replace [username] with your GitHub username.
