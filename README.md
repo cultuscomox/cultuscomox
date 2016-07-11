@@ -4,7 +4,7 @@ Bootstrap starting point for ocean-science cats, based on Bootstrap Sass and Gra
 
 Finstrap is a simple starter website you can clone and tailor to be your own. It uses [Bootstrap 3](http://getbootstrap.com/), specifically, the [Sass-port](https://github.com/twbs/bootstrap-sass) and [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) as our foundation.
 
-## Important notes
+### Important notes
 As with all websites, you'll need a host. Luckily for us, GitHub provides free hosting with [GitHub Pages](https://pages.github.com/)! These instructions are written assuming you've never touched GitHub, a terminal, an IDE, HTML, Sass, or any of those ~~fancy~~ ridiculously-awesome web-development helpers before. We're attempting to be very thorough here!
 
 If anything is wrong/not clear/deprecated, use the Issues tab (at the top of the GitHub repository) to let us know –– thanks!
@@ -49,12 +49,47 @@ You'll need to run the following commands in order:
 Visit your GitHub pages repo online (i.e. https://github.com/mareoc/mareoc.github.io) and you should see it's filled with code now. Yay!!
 
 Finally, visit your GitHub Pages site at _https://[username].github.io_ and you should see your starter website. Again, be sure to replace [username] with your GitHub username.
-__Congratulations!!!__
+
+### Step 5: Install Sass-y magic
+Nitrous has installed Ruby for you, and your starter website's codebase is now in place, but we need to install the helper functions ([Compass](http://compass-style.org/) and such) to put the icing on the cake.
+
+In your Nitrous IDE's terminal, you should be in the _code/finstrap_ directory. If not `cd $HOME/code/finstrap` into it.
+
+Again, you'll need to run the following commands in order:
+<ol>
+<li><code>gem install bundler</code> install's the Bundler Ruby gem.</li>
+<li><code>bundle install</code> will install all the required gems for this project.</li>
+</ol>
+
+__Congratulations!!!__ Compass, Sass, Boostrap-Sass, and their friends are now all installed! Get customizing!
 
 Customizing your new site
 ------
-## Rename the site and add your contact information
+We're focusing on using HTML and Sassy-CSS (the .scss files that you see in the _sass_ directory) to stylize your site. We're not covering Javascript here, though the site does utilize JS for the menu bar, transitions, and such.
 
+The homepage is the _index.html_ file. This is where you'll do most of your customizing. You'll notice the site is broken into sections with HTML comments like `<!-- Navigation -->` and `<!-- Intro Section -->`. Comments do not show up on the site.
 
-## Add a custom domain name
-If you own (or have purchased) a domain name, you can add that via the settings tab for your repo. Just go to the _GitHub Pages_ section about halfway down the page. Click the _learn more_ link there for full details. But basically, you just type in the domain name, click save, and then have your DNS provider create a CNAME record for the www subdomain pointing to _github.com/username/username.github.io_. Create an ALIAS or ANAME record for the bare (non-www) domain.
+The _sass_ directory is where the "look and feel" of the site is determined. The _styles.scss_ file imports the fonts, icons, and stylesheets we're using. You shouldn't need to touch it. The main file you'll want to edit is <em>_main.scss</em> in the _base_ directory. Sass also allows the use of variables, which are set in the <em>_variables.scss</em> file in the _variables_ directory. You can easily change the site's fonts and primary colors there.
+
+## Make your local changes live
+Each time you edit/save changes to your Sass files, you'll need to have [Compass](http://compass-style.org/) compile the Sass code into plain-old CSS. The easiest way to do this is to run `compass watch` from within your Finstrap directory (`cd #HOME/code/finstrap`). Each time you save a .scss file, Compass will compile it, or attempt to do so and warn you of errors. Press the `control` and `c` keys on your keyboard to have Compass stop watching for changes. You can also run `compass compile -e production --force` to force Compass to compile new stylesheets on a one-off basis.
+
+__To see changes online, you'll need to _push_ your code to GitHub__. This is an easy, 3-step process:
+<ol>
+<li><code>git add -A</code> gathers your current code changes.</li>
+<li><code>git status</code> allows you to see what's all been staged for commit. If you're expecting to see a file that's not staged, be sure you saved your changes to the file and then run <code>git add -A</code> again.</li>
+<li><code>git push origin master</code> pushes your local code to GitHub. Wait about 15-30 seconds, and then refresh your GitHub Pages' site to see your changes.</li>
+</ol>
+
+### Rename the site and add your contact information
+In the `<head>` of your _index.html_ file, the first things you'll want to change are the site's name and authoring information.
+
+_Meta tags_ contain metadata (that's data about data) about your site. The _Meta Description_ tag is what search engines (like Google and Bing) show below your site's name in search results. Keep this under 160 characters. The _Meta Author_ tag would be you/your organization. The _Title_ tag is the name of your website, e.g. _Professor X's Lab_ or _OpenChannels: Forum for Ocean Planning and Management_.
+
+### Add your logo
+Logos and images live in the _images_ directory. Being a responsive website, you need to be a bit careful about what images you use. Think _mobile first_! Will the logo or image you're using look good scaled down to a smartphone-sized screen? If so: use it! If not: pick something else.
+
+You'll notice we reference the MARE logo with `<img src="../images/mare-logo.png" alt="MARE" style="max-width:100%; max-height:90px">`. Change _mare-logo.png_ to your image's filename. The _alt_ should describe the image. Replace _max-height_ with the height of your image at original size, or the largest height you'd like the image to be on a desktop monitor. The image will automatically scale-down when the site is viewed on smaller screens.
+
+### Add a custom domain name
+If you own (or have purchased) a domain name, you can add that via the settings tab for your repo. Just go to the _GitHub Pages_ section about halfway down the page. Click the _learn more_ link there for full details. But basically, you just type in the domain name, click save, and then add the relevant DNS records. Create a CNAME record for the www subdomain pointing to _github.com/username/username.github.io_. Create an ALIAS or ANAME record for the bare (non-www) domain.
