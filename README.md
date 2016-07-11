@@ -4,6 +4,8 @@ Bootstrap starting point for ocean-science cats, based on Bootstrap Sass and Gra
 
 Finstrap is a simple starter website you can clone and tailor to be your own. It uses [Bootstrap 3](http://getbootstrap.com/), specifically, the [Sass-port](https://github.com/twbs/bootstrap-sass) and [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) as our foundation.
 
+See a live-demo at https://mareoc.github.io/finstrap/
+
 ### Important notes
 As with all websites, you'll need a host. Luckily for us, GitHub provides free hosting with [GitHub Pages](https://pages.github.com/)! These instructions are written assuming you've never touched GitHub, a terminal, an IDE, HTML, Sass, or any of those ~~fancy~~ ridiculously-awesome web-development helpers before. We're attempting to be very thorough here!
 
