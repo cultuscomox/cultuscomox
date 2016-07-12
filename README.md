@@ -59,7 +59,7 @@ In your Nitrous IDE's terminal, you should be in the _code/finstrap_ directory. 
 
 Again, you'll need to run the following commands in order:
 <ol>
-<li><code>gem install bundler</code> install's the Bundler Ruby gem.</li>
+<li><code>gem install bundler</code> installs the Bundler Ruby gem.</li>
 <li><code>bundle install</code> will install all the required gems for this project.</li>
 </ol>
 
