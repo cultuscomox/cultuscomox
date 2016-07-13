@@ -91,7 +91,10 @@ _Meta tags_ contain metadata (that's data about data) about your site. The _Meta
 ### Add your logo
 Logos and images live in the _images_ directory. Being a responsive website, you need to be a bit careful about what images you use. Think _mobile first_! Will the logo or image you're using look good scaled down to a smartphone-sized screen? If so: use it! If not: pick something else.
 
-You'll notice we reference the MARE logo with `<img src="../images/mare-logo.png" alt="MARE" style="max-width:100%; max-height:90px">`. Change _mare-logo.png_ to your image's filename. The _alt_ should describe the image. Replace _max-height_ with the height of your image at original size, or the largest height you'd like the image to be on a desktop monitor. The image will automatically scale-down when the site is viewed on smaller screens.
+You'll notice we reference the MARE logo with `<img src="..finstrap/images/fins.png" alt="Diving fins" style="max-width:100%; max-height:197px">`. Change _../finstrap/images/fins.png_ to _../images/filename.png_ replacing _filename.png_ with your image. The _alt_ should describe the image. Replace _max-height_ with the height of your image at original size, or the largest height you'd like the image to be on a desktop monitor. The image will automatically scale-down when the site is viewed on smaller screens.
+
+### Fontawesome icons
+We're using [Fontawesome](http://fontawesome.io/) for icons, i.e. the icons you see in the Contact section for Twitter and GitHub. You can [browse the list of icons here](http://fontawesome.io/icons/). To add a Facebook icon, you'd use the class `fa fa-facebook fa-fw`or for LinkedIn use `fa fa-linkedin fa-fw`.
 
 ### Add a custom domain name
 If you own (or have purchased) a domain name, you can add that via the settings tab for your repo. Just go to the _GitHub Pages_ section about halfway down the page. Click the _learn more_ link there for full details. But basically, you just type in the domain name, click save, and then add the relevant DNS records. Create a CNAME record for the www subdomain pointing to _github.com/username/username.github.io_. Create an ALIAS or ANAME record for the bare (non-www) domain.
