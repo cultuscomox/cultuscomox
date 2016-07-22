@@ -34,7 +34,7 @@ On the lower part of your IDE, there should be a black area with a text block th
 
 You should now see `-> code` in your terminal. Type `git clone git@github.com:mareoc/finstrap` (and don't forget to press enter –– no more reminders!) to clone the Finstrap codebase. If you see a notice about an RSA key, just type `yes` to continue. Type `cd finstrap` to enter the folder.
 
-### Step 4: Link the newly-cloned project to your GutHub Pages repo
+### Step 4: Link the newly-cloned project to your GitHub Pages repo
 Right now, the Finstrap project you just cloned is linked to the _mareoc_ GitHub account. We need to link it you the GitHub pages repository you created in Step 1.
 
 First, run `rm -rf .git` to remove the _mareoc_ git configuration. You should notice the _git:(master)_ text in the terminal is now gone. Good job!
